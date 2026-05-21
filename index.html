@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XV años de Camila</title>
+  <meta name="description" content="Invitación digital premium para los XV años de Camila" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/photos/intro.jpg">
+  <link rel="preload" as="image" href="assets/photos/hero-1.jpg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <p>Estamos preparando una noche muy especial...</p>
+  </div>
+
+  <audio id="bgMusic" src="assets/music/song.mp3" preload="none" loop></audio>
+
+  <section id="intro" class="intro">
+    <div class="intro-bg"></div>
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+      <p class="eyebrow">XV años</p>
+      <h1>Camila</h1>
+      <p class="intro-title">Hola, me encantaría compartir este momento contigo</p>
+      <button id="enterBtn" class="btn primary">Toca para abrir la invitación</button>
+    </div>
+  </section>
+
+  <button id="musicBtn" class="music-btn" aria-label="Activar o pausar música">♪</button>
+
+  <main id="site" class="site hidden">
+    <section class="hero">
+      <div class="hero-slideshow" id="heroSlideshow"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Mis XV años</p>
+        <h2>Camila</h2>
+        <p class="date">27 · 10 · 2027</p>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">0</strong><span>Días</span></div>
+          <div><strong id="hours">0</strong><span>Horas</span></div>
+          <div><strong id="minutes">0</strong><span>Min</span></div>
+          <div><strong id="seconds">0</strong><span>Seg</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section phrase-section reveal">
+      <p class="phrase">Hay momentos que merecen celebrarse para siempre</p>
+    </section>
+
+    <section class="section guest-section reveal">
+      <p class="eyebrow">Invitación personalizada</p>
+      <h2 id="guestTitle">Bienvenida</h2>
+      <p id="guestMessage">Gracias por acompañarme en esta noche tan especial.</p>
+      <p id="guestPasses" class="passes"></p>
+      <a id="guestRsvp" class="btn secondary" target="_blank" rel="noopener">Confirmar asistencia</a>
+    </section>
+
+    <section class="section welcome-section reveal">
+      <p class="eyebrow">Con mucho cariño</p>
+      <p class="welcome-text">Con mucha ilusión quiero compartir contigo una noche que guardaré para siempre en mi corazón. Gracias por acompañarme en este momento tan especial.</p>
+      <div class="names">
+        <div>
+          <span>Mis padres</span>
+          <p>Sra. Daniela Monreal de Garcia<br>Sr. Alejandro Garcia Ruiz</p>
+        </div>
+        <div>
+          <span>Mis padrinos</span>
+          <p>Sra. Marcela Villarreal de Salinas<br>Sr. Eduardo Salinas Treviño</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section reveal">
+      <p class="eyebrow">Programa</p>
+      <h2>Una noche para recordar</h2>
+      <div class="timeline">
+        <article><span>19:00</span><h3>Ceremonia</h3><p>Parroquia San Juan Bosco</p></article>
+        <article><span>21:00</span><h3>Recepción</h3><p>Salón Real de Cumbres</p></article>
+        <article><span>22:00</span><h3>Cena & celebración</h3><p>Brindis, baile y momentos especiales.</p></article>
+      </div>
+    </section>
+
+    <section class="section locations reveal">
+      <div class="location-card">
+        <p class="eyebrow">Ceremonia</p>
+        <h2>Parroquia San Juan Bosco</h2>
+        <p>19:00 hrs · Monterrey, Nuevo León</p>
+        <a class="btn ghost" href="https://maps.google.com/?q=Parroquia+San+Juan+Bosco+Monterrey" target="_blank" rel="noopener">Ver ubicación</a>
+      </div>
+      <div class="location-card">
+        <p class="eyebrow">Recepción</p>
+        <h2>Salón Real de Cumbres</h2>
+        <p>21:00 hrs · Monterrey, Nuevo León</p>
+        <a class="btn ghost" href="https://maps.google.com/?q=Salon+Real+de+Cumbres+Monterrey" target="_blank" rel="noopener">Ver ubicación</a>
+      </div>
+    </section>
+
+    <section class="section dress-code reveal">
+      <p class="eyebrow">Dress code</p>
+      <h2>Formal elegante</h2>
+      <div class="dress-grid">
+        <div><span>Ellas</span><p>Vestidos largos, telas sofisticadas y tonos elegantes.</p></div>
+        <div><span>Ellos</span><p>Traje oscuro o tuxedo en tonos clásicos.</p></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section reveal">
+      <p class="eyebrow">Galería</p>
+      <h2>Camila</h2>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="section gifts reveal">
+      <p class="eyebrow">Detalles</p>
+      <h2>Mesa de regalos</h2>
+      <p>En este espacio se podrán incluir una o varias mesas de regalos.</p>
+      <div class="gift-actions">
+        <button class="btn secondary" data-modal="giftModal">Mesa de regalos</button>
+        <button class="btn secondary" data-modal="transferModal">Transferencia</button>
+      </div>
+      <p class="small-note">El día del evento encontrarás una mesa de sobres y libro de firmas en la entrada del salón.</p>
+    </section>
+
+    <section class="section rsvp reveal">
+      <p class="eyebrow">RSVP</p>
+      <h2>¿Nos acompañas?</h2>
+      <p>Confirma tu asistencia por WhatsApp.</p>
+      <a id="mainRsvp" class="btn primary" target="_blank" rel="noopener">Confirmar asistencia</a>
+      <p class="demo-notice">Demo funcional enlazado temporalmente a DUMOSTUDIO para pruebas de experiencia y navegación.</p>
+      <button id="saveDateBtn" class="btn ghost">Guardar fecha</button>
+    </section>
+
+    <footer class="footer">
+      <p>Un recuerdo digital creado para conservar este momento en el tiempo.</p>
+      <span>DUMOSTUDIO · Demo premium</span>
+    </footer>
+  </main>
+
+  <div id="lightbox" class="lightbox">
+    <button id="closeLightbox" aria-label="Cerrar">×</button>
+    <img id="lightboxImg" alt="Foto de Camila" />
+  </div>
+
+  <div id="giftModal" class="modal">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <h2>Mesa de regalos</h2>
+      <p>Aquí se podrán colocar enlaces a Liverpool, Amazon, Palacio de Hierro u otras opciones elegidas por la familia.</p>
+    </div>
+  </div>
+
+  <div id="transferModal" class="modal">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <h2>Transferencia bancaria</h2>
+      <p>Si deseas realizar un regalo por transferencia, aquí encontrarás los datos bancarios.</p>
+      <div class="bank-box">
+        <span>CLABE demo</span>
+        <strong>000000000000000000</strong>
+      </div>
+      <button class="btn secondary" id="copyClabe">Copiar CLABE</button>
+    </div>
+  </div>
+
+  <script src="data/event.js"></script>
+  <script src="data/guests.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
