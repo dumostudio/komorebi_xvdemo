@@ -1,0 +1,14 @@
+
+REEMPLAZA ESTOS ARCHIVOS EN TU PROYECTO ACTUAL:
+
+1. style.css
+2. script.js
+
+CAMBIOS PRINCIPALES:
+- Paleta clara premium
+- Hero estilo Ana Sofia
+- Nombre más suave
+- Countdown discreto
+- Sakura particles
+- Galería tipo Mia
+- Copy mexicano refinado
