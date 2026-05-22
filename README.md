@@ -1,18 +1,3 @@
-# Komorebi XV Demo · Beta 2 completa
+# Komorebi XV Demo · v4 fix
 
-Esta versión reemplaza la carpeta completa del proyecto.
-
-Incluye:
-- paleta soft luxury XV
-- hero más romántico
-- nombre Camila con tipografía más juguetona
-- countdown discreto
-- invitados personalizados con copy mexicano
-- sección padrinos
-- timeline
-- menú
-- dress code con links Pinterest
-- galería tipo stack/polaroid
-- recomendaciones de Santiago
-- mesa de regalos Amazon
-- sakura particles
+Esta versión corrige el error donde index.html quedó como texto plano/markdown. Reemplaza todos los archivos del repo con esta carpeta.

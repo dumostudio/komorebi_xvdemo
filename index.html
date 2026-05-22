@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XV años de Camila</title>
-  <meta name="description" content="Invitación digital premium para los XV años de Camila" />
+  <meta name="description" content="Invitación digital premium para los XV años de Camila">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/photos/intro.jpg">
-  <link rel="preload" as="image" href="assets/photos/hero-1.jpg">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="loader" class="loader">
-    <p>Estamos preparando una noche muy especial...</p>
-  </div>
-
+  <div id="loader" class="loader"><p>Estamos preparando una noche muy especial...</p></div>
   <div class="sakura" id="sakura"></div>
-
   <audio id="bgMusic" src="assets/music/song.mp3" preload="none" loop></audio>
 
   <section id="intro" class="intro">
@@ -32,7 +26,7 @@
     </div>
   </section>
 
-  <button id="musicBtn" class="music-btn" aria-label="Activar o pausar música">♪</button>
+  <button id="musicBtn" class="music-btn" aria-label="Música">♪</button>
 
   <main id="site" class="site hidden">
     <section class="hero">
@@ -51,9 +45,7 @@
       </div>
     </section>
 
-    <section class="section phrase-section reveal">
-      <p class="phrase">Hay momentos que merecen celebrarse para siempre</p>
-    </section>
+    <section class="section phrase-section reveal"><p class="phrase">Hay momentos que merecen celebrarse para siempre</p></section>
 
     <section class="section guest-section reveal">
       <h2 id="guestTitle">Bienvenida</h2>
@@ -66,64 +58,54 @@
       <p class="eyebrow">Con mucho cariño</p>
       <p class="welcome-text">Con mucha ilusión quiero compartir contigo una noche que guardaré para siempre en mi corazón. Gracias por acompañarme en este momento tan especial.</p>
       <div class="names">
-        <div>
-          <span>Mis padres</span>
-          <p>Sra. Daniela Monreal de Garcia<br>Sr. Alejandro Garcia Ruiz</p>
-        </div>
-        <div>
-          <span>Mis padrinos</span>
-          <p>Sra. Marcela Villarreal de Salinas<br>Sr. Eduardo Salinas Treviño</p>
-        </div>
+        <div><span>Mis padres</span><p>Sra. Daniela Monreal de Garcia<br>Sr. Alejandro Garcia Ruiz</p></div>
+        <div><span>Mis padrinos</span><p>Sra. Marcela Villarreal de Salinas<br>Sr. Eduardo Salinas Treviño</p></div>
       </div>
     </section>
 
-    <section class="section godparents-section reveal">
+    <section class="section godparents reveal">
       <p class="eyebrow">Padrinos</p>
       <h2>Con la bendición de quienes me acompañan</h2>
-      <div class="godparents-grid" id="godparentsGrid"></div>
+      <div class="card-grid">
+        <article><span>Velación</span><p>Marcela Villarreal y Eduardo Salinas</p></article>
+        <article><span>Anillos</span><p>Patricia Garza y Ricardo Garza</p></article>
+        <article><span>Ramo</span><p>Claudia Monreal</p></article>
+        <article><span>Brindis</span><p>Andrea Ruiz y Fernando Treviño</p></article>
+      </div>
     </section>
 
     <section class="section timeline-section reveal">
       <p class="eyebrow">Programa</p>
       <h2>Una noche para recordar</h2>
-      <div class="timeline" id="timeline"></div>
+      <div class="timeline">
+        <article><span>19:00</span><h3>Ceremonia</h3><p>Parroquia San Juan Bosco</p></article>
+        <article><span>21:00</span><h3>Recepción</h3><p>Salón Real de Cumbres</p></article>
+        <article><span>22:00</span><h3>Cena</h3><p>Un momento especial para compartir en familia.</p></article>
+        <article><span>23:00</span><h3>Vals</h3><p>El inicio de una noche inolvidable.</p></article>
+      </div>
     </section>
 
     <section class="section locations reveal">
-      <div class="location-card">
-        <p class="eyebrow">Ceremonia</p>
-        <h2>Parroquia San Juan Bosco</h2>
-        <p>19:00 hrs · Monterrey, Nuevo León</p>
-        <a class="btn ghost" href="https://maps.google.com/?q=Parroquia+San+Juan+Bosco+Monterrey" target="_blank" rel="noopener">Ver ubicación</a>
-      </div>
-      <div class="location-card">
-        <p class="eyebrow">Recepción</p>
-        <h2>Salón Real de Cumbres</h2>
-        <p>21:00 hrs · Monterrey, Nuevo León</p>
-        <a class="btn ghost" href="https://maps.google.com/?q=Salon+Real+de+Cumbres+Monterrey" target="_blank" rel="noopener">Ver ubicación</a>
-      </div>
+      <div class="location-card"><p class="eyebrow">Ceremonia</p><h2>Parroquia San Juan Bosco</h2><p>19:00 hrs · Monterrey, Nuevo León</p><a class="btn ghost" href="https://maps.google.com/?q=Parroquia+San+Juan+Bosco+Monterrey" target="_blank">Ver ubicación</a></div>
+      <div class="location-card"><p class="eyebrow">Recepción</p><h2>Salón Real de Cumbres</h2><p>21:00 hrs · Monterrey, Nuevo León</p><a class="btn ghost" href="https://maps.google.com/?q=Salon+Real+de+Cumbres+Monterrey" target="_blank">Ver ubicación</a></div>
     </section>
 
     <section class="section menu-section reveal">
       <p class="eyebrow">Menú</p>
       <h2>Una cena especial</h2>
-      <div class="menu-list" id="menuList"></div>
+      <div class="card-grid three">
+        <article><span>Entrada</span><h3>Crema de elote rostizado</h3><p>Con crocante de parmesano.</p></article>
+        <article><span>Plato fuerte</span><h3>Filete en salsa de vino</h3><p>Acompañado de vegetales rostizados.</p></article>
+        <article><span>Postre</span><h3>Cheesecake de frutos rojos</h3><p>Un cierre dulce para la celebración.</p></article>
+      </div>
     </section>
 
     <section class="section dress-code reveal">
       <p class="eyebrow">Dress code</p>
       <h2>Formal elegante</h2>
       <div class="dress-grid">
-        <a href="https://pin.it/1tsGtSVzW" target="_blank" rel="noopener" class="dress-card">
-          <span>Ellas</span>
-          <p>Vestidos largos, telas sofisticadas y tonos elegantes.</p>
-          <strong>Ver inspiración</strong>
-        </a>
-        <a href="https://pin.it/2PInRAJCB" target="_blank" rel="noopener" class="dress-card">
-          <span>Ellos</span>
-          <p>Traje oscuro o tuxedo en tonos clásicos.</p>
-          <strong>Ver inspiración</strong>
-        </a>
+        <a class="dress-card" href="https://pin.it/1tsGtSVzW" target="_blank"><span>Ellas</span><p>Vestidos largos, telas sofisticadas y tonos elegantes.</p><strong>Ver inspiración</strong></a>
+        <a class="dress-card" href="https://pin.it/2PInRAJCB" target="_blank"><span>Ellos</span><p>Traje oscuro o tuxedo en tonos clásicos.</p><strong>Ver inspiración</strong></a>
       </div>
     </section>
 
@@ -131,13 +113,16 @@
       <p class="eyebrow">Galería</p>
       <h2>Instantes de Camila</h2>
       <p class="section-intro">Toca la fotografía para descubrir la siguiente.</p>
-      <div class="gallery-stack" id="gallery"></div>
+      <div class="gallery-stack" id="galleryStack"></div>
     </section>
 
     <section class="section recommendations reveal">
       <p class="eyebrow">Para visitar</p>
       <h2>Qué hacer en Santiago</h2>
-      <div class="recommendation-grid" id="recommendations"></div>
+      <div class="card-grid">
+        <article><h3>Presa La Boca</h3><p>Ideal para pasear y tomar fotos antes del evento.</p><a class="btn ghost" target="_blank" href="https://maps.google.com/?q=Presa+La+Boca+Santiago+Nuevo+Leon">Ver ubicación</a></article>
+        <article><h3>Cola de Caballo</h3><p>Una visita clásica para quienes vienen de fuera.</p><a class="btn ghost" target="_blank" href="https://maps.google.com/?q=Cola+de+Caballo+Santiago+Nuevo+Leon">Ver ubicación</a></article>
+      </div>
     </section>
 
     <section class="section gifts reveal">
@@ -145,7 +130,7 @@
       <h2>Mesa de regalos</h2>
       <p>En este espacio se podrán incluir una o varias mesas de regalos.</p>
       <div class="gift-actions">
-        <a class="btn secondary" href="https://www.amazon.com.mx/registries/gl/guest-view/34KX2H43I1U15?ref_=cm_sw_r_apann_ggr-subnav-share_N85725YDTNPRMCP5SEXR_3&language=en-US" target="_blank" rel="noopener">Amazon</a>
+        <a class="btn secondary" href="https://www.amazon.com.mx/registries/gl/guest-view/34KX2H43I1U15?ref_=cm_sw_r_apann_ggr-subnav-share_N85725YDTNPRMCP5SEXR_3&language=en-US" target="_blank">Amazon</a>
         <button class="btn secondary" data-modal="transferModal">Transferencia</button>
       </div>
       <p class="small-note">El día del evento encontrarás una mesa de sobres y libro de firmas en la entrada del salón.</p>
@@ -160,24 +145,10 @@
       <button id="saveDateBtn" class="btn ghost">Guardar fecha</button>
     </section>
 
-    <footer class="footer">
-      <p>Gracias por formar parte de este recuerdo que guardaré para siempre.</p>
-      <span>Komorebi · Demo premium</span>
-    </footer>
+    <footer class="footer"><p>Gracias por formar parte de este recuerdo que guardaré para siempre.</p><span>Komorebi · Demo premium</span></footer>
   </main>
 
-  <div id="transferModal" class="modal">
-    <div class="modal-card">
-      <button class="modal-close" data-close>×</button>
-      <h2>Transferencia bancaria</h2>
-      <p>Si deseas realizar un regalo por transferencia, aquí encontrarás los datos bancarios.</p>
-      <div class="bank-box">
-        <span>CLABE demo</span>
-        <strong>000000000000000000</strong>
-      </div>
-      <button class="btn secondary" id="copyClabe">Copiar CLABE</button>
-    </div>
-  </div>
+  <div id="transferModal" class="modal"><div class="modal-card"><button class="modal-close" data-close>×</button><h2>Transferencia bancaria</h2><p>Si deseas realizar un regalo por transferencia, aquí encontrarás los datos bancarios.</p><div class="bank-box"><span>CLABE demo</span><strong>000000000000000000</strong></div><button class="btn secondary" id="copyClabe">Copiar CLABE</button></div></div>
 
   <script src="data/event.js"></script>
   <script src="data/guests.js"></script>
