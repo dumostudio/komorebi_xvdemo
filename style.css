@@ -618,7 +618,7 @@
 }
 
 
-/* ===== KOMOREBI V6.4 COMPLETA — PHOTOS + GIFTS ===== */
+/* ===== KOMOREBI V6.4.1 COMPLETA — FOTOS REALES + REGALOS FINAL ===== */
 
 .section-photo{
   width:100%;
@@ -628,16 +628,13 @@
   margin-bottom:1.2rem;
   box-shadow:0 16px 40px rgba(85,60,50,.08);
 }
-
 .wide-card .section-photo{
   height:260px;
   margin-bottom:0;
 }
-
 .visit-grid .section-photo{
   height:180px;
 }
-
 .food-img-real{
   width:100%;
   height:160px;
@@ -645,7 +642,6 @@
   border-radius:20px;
   margin:-.2rem 0 1.2rem;
 }
-
 .menu-thumb{
   width:86px;
   height:72px;
@@ -654,8 +650,6 @@
   border-radius:0;
   margin:0;
 }
-
-/* Gifts final */
 .gift-stack{
   width:min(92vw,760px);
   margin:2.2rem auto 0;
@@ -664,7 +658,6 @@
   position:relative;
   z-index:2;
 }
-
 .gift-card,
 .gift-note-card{
   display:grid;
@@ -678,11 +671,9 @@
   backdrop-filter:blur(14px);
   text-align:left;
 }
-
 .gift-card{
   grid-template-columns:1fr auto;
 }
-
 .gift-card-copy span,
 .gift-note-card span{
   display:block;
@@ -692,7 +683,6 @@
   letter-spacing:.15em;
   text-transform:uppercase;
 }
-
 .gift-card-copy h3{
   margin:.1rem 0 .45rem;
   font-family:var(--serif);
@@ -700,14 +690,12 @@
   font-weight:500;
   color:var(--charcoal);
 }
-
 .gift-card-copy p,
 .gift-note-card p{
   margin:0;
   color:var(--muted);
   line-height:1.65;
 }
-
 .amazon-logo-link{
   display:grid;
   place-items:center;
@@ -720,7 +708,6 @@
   color:var(--charcoal);
   border:1px solid rgba(185,143,155,.16);
 }
-
 .amazon-logo-text{
   font-family:Arial, sans-serif;
   font-size:1.8rem;
@@ -729,7 +716,6 @@
   color:#232f3e;
   text-transform:lowercase;
 }
-
 .amazon-logo-link small{
   margin-top:.2rem;
   color:var(--gold);
@@ -737,12 +723,9 @@
   letter-spacing:.14em;
   text-transform:uppercase;
 }
-
 .clabe-open{
   white-space:nowrap;
 }
-
-/* CLABE popup */
 .clabe-modal{
   position:fixed;
   inset:0;
@@ -750,19 +733,16 @@
   display:none;
   padding:1rem;
 }
-
 .clabe-modal.active{
   display:grid;
   place-items:center;
 }
-
 .clabe-backdrop{
   position:absolute;
   inset:0;
   background:rgba(44,41,40,.45);
   backdrop-filter:blur(12px);
 }
-
 .clabe-panel{
   position:relative;
   width:min(92vw,500px);
@@ -774,7 +754,6 @@
   text-align:center;
   border:1px solid rgba(185,143,155,.22);
 }
-
 .clabe-panel h3{
   margin:0 0 1rem;
   font-family:var(--serif);
@@ -782,7 +761,6 @@
   font-weight:500;
   color:var(--charcoal);
 }
-
 .clabe-close{
   position:absolute;
   right:1rem;
@@ -796,7 +774,6 @@
   font-size:1.5rem;
   cursor:pointer;
 }
-
 .bank-lines{
   margin:1rem 0;
   padding:1rem;
@@ -805,11 +782,9 @@
   color:var(--muted);
   text-align:left;
 }
-
 .bank-lines p{
   margin:.4rem 0;
 }
-
 .clabe-copy-box{
   display:flex;
   gap:.7rem;
@@ -821,14 +796,12 @@
   background:rgba(255,255,255,.68);
   border:1px solid rgba(185,143,155,.16);
 }
-
 .clabe-copy-box span{
   color:var(--charcoal);
   font-family:monospace;
   font-size:1.05rem;
   letter-spacing:.03em;
 }
-
 .clabe-copy-box button{
   border:0;
   border-radius:999px;
@@ -840,28 +813,23 @@
   letter-spacing:.08em;
   text-transform:uppercase;
 }
-
 .copy-status{
   opacity:0;
   margin:1rem 0 0;
   color:var(--gold);
   transition:opacity .25s ease;
 }
-
 .copy-status.show{
   opacity:1;
 }
-
 @media(max-width:720px){
   .gift-card{
     grid-template-columns:1fr;
     text-align:center;
   }
-
   .amazon-logo-link{
     width:100%;
   }
-
   .wide-card .section-photo,
   .section-photo{
     height:210px;

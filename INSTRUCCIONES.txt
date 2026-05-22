@@ -1,7 +1,4 @@
 Reemplaza TODO el contenido del repo excepto .gitattributes.
 
 Commit sugerido:
-komorebi v6.4 completa
-
-Después:
-Commit to main → Push origin
+komorebi v6.4.1 completa
