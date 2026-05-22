@@ -118,3 +118,91 @@
   .weather-main strong{font-size:3.2rem}
   .weather-icon{width:64px;height:64px}
 }
+
+
+/* ===== KOMOREBI V6.1 — STICKY TIMELINE + PINTEREST TEST ===== */
+
+.sticky-timeline{
+  position:relative;
+  width:min(92vw,760px);
+  padding-bottom:1rem;
+}
+.sticky-timeline::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:linear-gradient(to bottom, transparent, rgba(185,143,155,.45), transparent);
+}
+.sticky-timeline .timeline-card{
+  position:sticky;
+  top:5.8rem;
+  margin:0 auto 1.4rem;
+  padding:1.4rem;
+  width:min(100%,640px);
+  text-align:center;
+  border-left:0;
+  background:rgba(255,255,255,.68);
+  transform-origin:center top;
+  box-shadow:0 22px 60px rgba(85,60,50,.08);
+}
+.sticky-timeline .timeline-card::before{
+  display:none;
+}
+.sticky-timeline .timeline-card:nth-child(1){z-index:1}
+.sticky-timeline .timeline-card:nth-child(2){z-index:2}
+.sticky-timeline .timeline-card:nth-child(3){z-index:3}
+.sticky-timeline .timeline-card:nth-child(4){z-index:4}
+.sticky-timeline .timeline-card p{
+  margin:.5rem auto 0;
+  max-width:440px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.pinterest-embed-grid{
+  align-items:start;
+}
+.pinterest-widget-shell{
+  display:grid;
+  place-items:center;
+  min-height:290px;
+  margin:1rem 0;
+  padding:.8rem;
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.95), transparent 36%),
+    linear-gradient(135deg, rgba(185,143,155,.14), rgba(234,216,202,.34));
+  overflow:hidden;
+}
+.pinterest-widget-shell > span,
+.pinterest-widget-shell iframe{
+  max-width:100%!important;
+}
+.pin-fallback{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  padding:.75rem 1rem;
+  border-radius:999px;
+  background:rgba(255,255,255,.55);
+  color:var(--mauve);
+  text-decoration:none;
+  font-size:.76rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+@media(max-width:520px){
+  .sticky-timeline::before{
+    left:1.2rem;
+  }
+  .sticky-timeline .timeline-card{
+    top:4.4rem;
+  }
+  .pinterest-widget-shell{
+    min-height:250px;
+  }
+}

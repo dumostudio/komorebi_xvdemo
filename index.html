@@ -87,11 +87,11 @@
 
     <section class="section itinerary block reveal" id="itinerario">
       <p class="eyebrow">Itinerario</p><h2>Programa del día</h2>
-      <div class="timeline">
-        <article><span>06:00 p.m.</span><h3>Ceremonia religiosa</h3></article>
-        <article><span>08:00 p.m.</span><h3>Cóctel de bienvenida</h3></article>
-        <article><span>09:00 p.m.</span><h3>Cena de gala</h3></article>
-        <article><span>10:00 p.m.</span><h3>Fiesta y baile</h3></article>
+      <div class="timeline sticky-timeline">
+        <article class="timeline-card"><span>06:00 p.m.</span><h3>Ceremonia religiosa</h3><p>Iniciamos la celebración con la bendición de este día especial.</p></article>
+        <article class="timeline-card"><span>08:00 p.m.</span><h3>Cóctel de bienvenida</h3><p>Un momento para recibir a nuestros invitados y compartir los primeros detalles de la noche.</p></article>
+        <article class="timeline-card"><span>09:00 p.m.</span><h3>Cena de gala</h3><p>Disfrutaremos una cena especial preparada para acompañar esta celebración.</p></article>
+        <article class="timeline-card"><span>10:00 p.m.</span><h3>Fiesta y baile</h3><p>La música, el vals y la fiesta darán inicio a los recuerdos más bonitos.</p></article>
       </div>
     </section>
 
@@ -108,9 +108,23 @@
     <section class="section dress block reveal" id="dress-code">
       <p class="eyebrow">Código de vestimenta</p><h2>Formal elegante</h2>
       <p class="section-copy">Sugerimos una paleta suave y elegante que acompañe la atmósfera de nuestra celebración.</p>
-      <div class="dress-grid">
-        <a href="https://pin.it/1tsGtSVzW" target="_blank" class="dress-card pinterest-card"><span>Damas</span><p>Vestido largo o midi, telas sofisticadas, colores pasteles o tonos elegantes.</p><div class="pin-preview">Tablero de inspiración</div><strong>Abrir Pinterest</strong></a>
-        <a href="https://pin.it/2PInRAJCB" target="_blank" class="dress-card pinterest-card"><span>Caballeros</span><p>Traje formal, zapatos de vestir y corbata opcional.</p><div class="pin-preview">Tablero de inspiración</div><strong>Abrir Pinterest</strong></a>
+      <div class="dress-grid pinterest-embed-grid">
+        <article class="dress-card pinterest-card">
+          <span>Damas</span>
+          <p>Vestido largo o midi, telas sofisticadas, colores pasteles o tonos elegantes.</p>
+          <div class="pinterest-widget-shell">
+            <a data-pin-do="embedBoard" data-pin-board-width="340" data-pin-scale-height="260" data-pin-scale-width="80" href="https://pin.it/1tsGtSVzW">Inspiración damas</a>
+          </div>
+          <a class="pin-fallback" href="https://pin.it/1tsGtSVzW" target="_blank" rel="noopener">Abrir tablero</a>
+        </article>
+        <article class="dress-card pinterest-card">
+          <span>Caballeros</span>
+          <p>Traje formal, zapatos de vestir y corbata opcional.</p>
+          <div class="pinterest-widget-shell">
+            <a data-pin-do="embedBoard" data-pin-board-width="340" data-pin-scale-height="260" data-pin-scale-width="80" href="https://pin.it/2PInRAJCB">Inspiración caballeros</a>
+          </div>
+          <a class="pin-fallback" href="https://pin.it/2PInRAJCB" target="_blank" rel="noopener">Abrir tablero</a>
+        </article>
       </div>
     </section>
 
@@ -178,6 +192,7 @@
 
   <div id="transferModal" class="modal"><div class="modal-card"><button class="modal-close" data-close>×</button><h2>Transferencia Bancaria</h2><p>Datos demo para transferencia.</p><div class="bank-box"><span>Banco</span><strong>BBVA</strong></div><div class="bank-box"><span>Titular</span><strong>Juan Pérez</strong></div><div class="bank-box"><span>Cuenta</span><strong>1234567890</strong></div></div></div>
 
+  <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
   <script src="data/event.js"></script><script src="data/guests.js"></script><script src="script.js"></script>
 </body>
 </html>

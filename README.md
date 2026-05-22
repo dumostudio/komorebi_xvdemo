@@ -1,9 +1,8 @@
-# Komorebi XV Demo · V6
+# Komorebi XV Demo · V6.1
 
-Cambios:
-- Widget interno de clima con Open-Meteo.
-- Si la fecha está lejos, muestra rayitas y texto elegante.
-- Se quitó Color reservado: Rojo.
-- Dress code con cards reusables para Pinterest.
-- Menú con placeholders para entrada, plato fuerte y postre.
-- Pétalos sakura inician después del hero, desde mensaje especial.
+Cambios de prueba:
+- Itinerario con tarjetas sticky que se van quedando conforme bajas.
+- Dress code con widget embebido de Pinterest para probar carga/UX.
+- Mantiene fallback de botón para abrir tablero si el embed no carga.
+
+Nota: Pinterest puede requerir sesión/cookies o bloquear el embed en algunos navegadores. Esta versión es prueba visual.

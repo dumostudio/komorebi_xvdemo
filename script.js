@@ -43,3 +43,16 @@ async function setupWeather(){
   }catch(error){}
 }
 setupWeather();
+
+
+function refreshPinterestWidgets(){
+  if(window.PinUtils && typeof window.PinUtils.build === "function"){
+    window.PinUtils.build();
+  }
+}
+setTimeout(refreshPinterestWidgets, 1200);
+document.addEventListener("click", (event)=>{
+  if(event.target && event.target.id === "enterBtn"){
+    setTimeout(refreshPinterestWidgets, 1200);
+  }
+});
