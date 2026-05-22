@@ -463,3 +463,156 @@
     min-height:300px;
   }
 }
+
+
+/* ===== KOMOREBI V6.3 — PETAL CLUSTERS + FAMILY CENTER + PINTEREST FALLBACK ===== */
+
+/* Force single family card centered on desktop */
+.family .people-grid{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  width:min(92vw,760px) !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+.family .people-grid article{
+  width:min(100%,520px) !important;
+  margin:0 auto !important;
+}
+
+/* More Occasio-like static petal clusters */
+.petal-cluster{
+  position:absolute;
+  width:180px;
+  height:180px;
+  pointer-events:none;
+  z-index:1;
+  opacity:.82;
+}
+.petal-cluster::before,
+.petal-cluster::after{
+  content:"";
+  position:absolute;
+  width:62px;
+  height:88px;
+  border-radius:70% 30% 65% 35%;
+  background:linear-gradient(145deg, rgba(245,231,216,.92), rgba(217,184,176,.42));
+  filter:drop-shadow(0 12px 18px rgba(80,60,50,.08));
+  animation:clusterSway 8s ease-in-out infinite alternate;
+}
+.petal-cluster::before{
+  left:34px;
+  top:42px;
+  transform:rotate(-38deg);
+}
+.petal-cluster::after{
+  left:86px;
+  top:34px;
+  width:52px;
+  height:76px;
+  background:linear-gradient(145deg, rgba(185,143,155,.74), rgba(185,143,155,.20));
+  transform:rotate(24deg);
+  animation-delay:-2s;
+}
+.petal-cluster.cluster-left{
+  left:5vw;
+  top:18%;
+}
+.petal-cluster.cluster-right{
+  right:5vw;
+  top:16%;
+  transform:scaleX(-1);
+}
+.petal-cluster.soft{
+  opacity:.48;
+}
+@keyframes clusterSway{
+  0%{translate:0 0; rotate:0deg}
+  100%{translate:8px 14px; rotate:10deg}
+}
+
+/* Layering so clusters stay decorative, not over text */
+.section > .petal-cluster + *{
+  position:relative;
+  z-index:2;
+}
+.section h2,
+.section .lead,
+.section .section-copy,
+.section .people-grid,
+.section .card-grid,
+.section .location-grid,
+.section .timeline,
+.section .menu-list,
+.section .dress-grid,
+.section .gift-actions,
+.section .wide-card,
+.section .visit-grid{
+  position:relative;
+  z-index:2;
+}
+
+/* Keep floating small petals visible after hero too */
+.sakura-layer{
+  z-index:1 !important;
+}
+.sakura-petal{
+  opacity:.30 !important;
+}
+
+/* Pinterest: show a graceful visible placeholder when official embed fails */
+.pinterest-widget-shell{
+  position:relative;
+  min-height:360px;
+}
+.pinterest-widget-shell > span,
+.pinterest-widget-shell iframe{
+  position:relative;
+  z-index:2;
+}
+.pinterest-placeholder{
+  position:absolute;
+  inset:.8rem;
+  z-index:1;
+  display:grid;
+  place-items:center;
+  align-content:center;
+  gap:.55rem;
+  padding:1.2rem;
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(255,255,255,.92), transparent 32%),
+    linear-gradient(135deg, rgba(185,143,155,.18), rgba(234,216,202,.42));
+  color:var(--mauve);
+}
+.pinterest-placeholder strong{
+  font-family:var(--serif);
+  font-size:1.6rem;
+  color:var(--charcoal);
+}
+.pinterest-placeholder p{
+  max-width:250px;
+  margin:0;
+  font-size:.82rem;
+  line-height:1.55;
+  color:var(--muted);
+}
+.pinterest-widget-shell:has(iframe) .pinterest-placeholder{
+  opacity:0;
+  visibility:hidden;
+}
+
+@media(max-width:760px){
+  .petal-cluster{
+    width:120px;
+    height:120px;
+    opacity:.45;
+  }
+  .petal-cluster.cluster-left{
+    left:-20px;
+  }
+  .petal-cluster.cluster-right{
+    right:-20px;
+  }
+}

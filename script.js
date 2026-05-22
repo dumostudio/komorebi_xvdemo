@@ -73,3 +73,16 @@ function setupTimelineCards(){
   cards.forEach((card)=>observer.observe(card));
 }
 setupTimelineCards();
+
+
+function refreshPinterestFallbacks(){
+  document.querySelectorAll(".pinterest-widget-shell").forEach((shell)=>{
+    setTimeout(()=>{
+      if(shell.querySelector("iframe")){
+        shell.classList.add("loaded");
+      }
+    }, 2500);
+  });
+}
+refreshPinterestFallbacks();
+setTimeout(refreshPinterestFallbacks, 5000);

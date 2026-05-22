@@ -1,1 +1,1 @@
-Reemplaza todo excepto .gitattributes. Commit: komorebi v6.2 polish. Push origin.
+Reemplaza todo excepto .gitattributes. Commit: komorebi v6.3 pinterest links. Push origin.

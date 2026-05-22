@@ -1,8 +1,9 @@
-# Komorebi XV Demo · V6.2
+# Komorebi XV Demo · V6.3
 
 Correcciones:
-- Familia centrada en desktop.
-- Pétalos recuperados después del hero, más visibles y con forma más sakura.
-- Itinerario tipo Occasio: línea central, tarjetas alternadas en desktop y línea izquierda en móvil, con animación al entrar.
-- Menú tipo Mia: separadores, categoría, mini foto y texto.
-- Pinterest se mantiene como widget embebido estilo Occasio.
+- Familia centrada forzada en desktop.
+- Pétalos tipo manojos decorativos en varias secciones.
+- Pinterest con URLs completas de tablero:
+  - https://mx.pinterest.com/me_komorebi/gala-ellas/
+  - https://mx.pinterest.com/me_komorebi/gala-ellos/
+- El embed de Pinterest ahora tiene más probabilidad de cargar correctamente.
