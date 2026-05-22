@@ -1,0 +1,14 @@
+
+SECCIÓN FINAL DE REGALOS
+
+Orden:
+1. Tu presencia es el mejor regalo
+2. Texto emotivo
+3. Tarjeta Amazon clicable
+4. Texto de sobres/libro de firmas
+5. Tarjeta Sobre virtual
+6. Botón CLABE
+7. Popup elegante:
+   - cerrar X
+   - copiar CLABE
+   - feedback visual

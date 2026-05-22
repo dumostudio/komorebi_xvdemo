@@ -1,1 +1,7 @@
-Reemplaza todo excepto .gitattributes. Commit: komorebi v6.3 pinterest links. Push origin.
+Reemplaza TODO el contenido del repo excepto .gitattributes.
+
+Commit sugerido:
+komorebi v6.4 completa
+
+Después:
+Commit to main → Push origin

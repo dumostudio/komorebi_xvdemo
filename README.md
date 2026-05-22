@@ -1,9 +1,14 @@
-# Komorebi XV Demo · V6.3
+# Komorebi XV Demo · V6.4 completa
 
-Correcciones:
-- Familia centrada forzada en desktop.
-- Pétalos tipo manojos decorativos en varias secciones.
-- Pinterest con URLs completas de tablero:
-  - https://mx.pinterest.com/me_komorebi/gala-ellas/
-  - https://mx.pinterest.com/me_komorebi/gala-ellos/
-- El embed de Pinterest ahora tiene más probabilidad de cargar correctamente.
+Base: v6.3 aprobada.
+
+Cambios:
+- Integra fotos reales en locaciones, hospedaje, sitios que visitar y menú.
+- Corrige sección de mesa de regalos:
+  - texto principal;
+  - tarjeta Amazon clickable;
+  - texto de sobres y libro de firmas;
+  - tarjeta Sobre virtual;
+  - popup CLABE con copiar;
+  - botón X para cerrar.
+- No cambia hero, galería, Pinterest, pétalos, timeline ni clima.

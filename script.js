@@ -86,3 +86,50 @@ function refreshPinterestFallbacks(){
 }
 refreshPinterestFallbacks();
 setTimeout(refreshPinterestFallbacks, 5000);
+
+
+// ===== KOMOREBI V6.4 — CLABE POPUP =====
+(function(){
+  const modal = document.getElementById("clabeModal");
+  const openBtn = document.getElementById("openClabe");
+  const copyBtn = document.getElementById("copyClabe");
+  const clabeText = document.getElementById("clabeText");
+  const copyStatus = document.getElementById("copyStatus");
+
+  if(!modal || !openBtn) return;
+
+  const closeModal = () => {
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+  };
+
+  const openModal = () => {
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+  };
+
+  openBtn.addEventListener("click", openModal);
+
+  modal.querySelectorAll("[data-clabe-close]").forEach((el)=>{
+    el.addEventListener("click", closeModal);
+  });
+
+  document.addEventListener("keydown", (event)=>{
+    if(event.key === "Escape" && modal.classList.contains("active")) closeModal();
+  });
+
+  if(copyBtn && clabeText){
+    copyBtn.addEventListener("click", async ()=>{
+      const value = clabeText.textContent.trim();
+      try{
+        await navigator.clipboard.writeText(value);
+        if(copyStatus){
+          copyStatus.classList.add("show");
+          setTimeout(()=>copyStatus.classList.remove("show"), 1800);
+        }
+      }catch(error){
+        alert("CLABE: " + value);
+      }
+    });
+  }
+})();
