@@ -1,8 +1,8 @@
-# Komorebi XV Demo · V6.1
+# Komorebi XV Demo · V6.2
 
-Cambios de prueba:
-- Itinerario con tarjetas sticky que se van quedando conforme bajas.
-- Dress code con widget embebido de Pinterest para probar carga/UX.
-- Mantiene fallback de botón para abrir tablero si el embed no carga.
-
-Nota: Pinterest puede requerir sesión/cookies o bloquear el embed en algunos navegadores. Esta versión es prueba visual.
+Correcciones:
+- Familia centrada en desktop.
+- Pétalos recuperados después del hero, más visibles y con forma más sakura.
+- Itinerario tipo Occasio: línea central, tarjetas alternadas en desktop y línea izquierda en móvil, con animación al entrar.
+- Menú tipo Mia: separadores, categoría, mini foto y texto.
+- Pinterest se mantiene como widget embebido estilo Occasio.
