@@ -1,1 +1,1 @@
-Reemplaza todo el contenido del repo excepto .gitattributes con esta carpeta. Commit: komorebi v5 occasio order. Push origin.
+Reemplaza todo el contenido del repo excepto .gitattributes. Commit: komorebi v6 weather placeholders. Push origin.
