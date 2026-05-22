@@ -1,3 +1,3 @@
-# Komorebi XV Demo · v4 fix
+# Komorebi XV Demo · V5
 
-Esta versión corrige el error donde index.html quedó como texto plano/markdown. Reemplaza todos los archivos del repo con esta carpeta.
+Versión con orden Occasio solicitado y placeholders editables.

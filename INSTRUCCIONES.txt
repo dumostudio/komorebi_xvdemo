@@ -1,1 +1,1 @@
-BORRA TODO MENOS .gitattributes Y REEMPLAZA CON ESTOS ARCHIVOS. Commit: komorebi v4 fix. Push origin.
+Reemplaza todo el contenido del repo excepto .gitattributes con esta carpeta. Commit: komorebi v5 occasio order. Push origin.
