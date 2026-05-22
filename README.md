@@ -1,19 +1,9 @@
-# Komorebi XV Demo · V6.4.1 completa
+# Komorebi XV Demo · V6.3
 
-Base: v6.3 aprobada.
-
-Incluye:
-- Fotos reales en locaciones, hospedaje, sitios que visitar y menú.
-- Mesa de regalos corregida:
-  - Amazon clickable;
-  - mesa de sobres y libro de firmas;
-  - Sobre virtual;
-  - popup CLABE con botón copiar y X cerrar.
-
-No toca:
-- hero;
-- galería;
-- Pinterest;
-- pétalos;
-- timeline;
-- clima.
+Correcciones:
+- Familia centrada forzada en desktop.
+- Pétalos tipo manojos decorativos en varias secciones.
+- Pinterest con URLs completas de tablero:
+  - https://mx.pinterest.com/me_komorebi/gala-ellas/
+  - https://mx.pinterest.com/me_komorebi/gala-ellos/
+- El embed de Pinterest ahora tiene más probabilidad de cargar correctamente.
