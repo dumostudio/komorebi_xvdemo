@@ -7,7 +7,7 @@
   <meta name="description" content="Invitación digital premium para los XV años de Camila" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/photos/intro.jpg">
   <link rel="preload" as="image" href="assets/photos/hero-1.jpg">
   <link rel="stylesheet" href="style.css" />
@@ -16,6 +16,8 @@
   <div id="loader" class="loader">
     <p>Estamos preparando una noche muy especial...</p>
   </div>
+
+  <div class="sakura" id="sakura"></div>
 
   <audio id="bgMusic" src="assets/music/song.mp3" preload="none" loop></audio>
 
@@ -54,7 +56,6 @@
     </section>
 
     <section class="section guest-section reveal">
-      <p class="eyebrow">Invitación personalizada</p>
       <h2 id="guestTitle">Bienvenida</h2>
       <p id="guestMessage">Gracias por acompañarme en esta noche tan especial.</p>
       <p id="guestPasses" class="passes"></p>
@@ -76,14 +77,16 @@
       </div>
     </section>
 
+    <section class="section godparents-section reveal">
+      <p class="eyebrow">Padrinos</p>
+      <h2>Con la bendición de quienes me acompañan</h2>
+      <div class="godparents-grid" id="godparentsGrid"></div>
+    </section>
+
     <section class="section timeline-section reveal">
       <p class="eyebrow">Programa</p>
       <h2>Una noche para recordar</h2>
-      <div class="timeline">
-        <article><span>19:00</span><h3>Ceremonia</h3><p>Parroquia San Juan Bosco</p></article>
-        <article><span>21:00</span><h3>Recepción</h3><p>Salón Real de Cumbres</p></article>
-        <article><span>22:00</span><h3>Cena & celebración</h3><p>Brindis, baile y momentos especiales.</p></article>
-      </div>
+      <div class="timeline" id="timeline"></div>
     </section>
 
     <section class="section locations reveal">
@@ -101,19 +104,40 @@
       </div>
     </section>
 
+    <section class="section menu-section reveal">
+      <p class="eyebrow">Menú</p>
+      <h2>Una cena especial</h2>
+      <div class="menu-list" id="menuList"></div>
+    </section>
+
     <section class="section dress-code reveal">
       <p class="eyebrow">Dress code</p>
       <h2>Formal elegante</h2>
       <div class="dress-grid">
-        <div><span>Ellas</span><p>Vestidos largos, telas sofisticadas y tonos elegantes.</p></div>
-        <div><span>Ellos</span><p>Traje oscuro o tuxedo en tonos clásicos.</p></div>
+        <a href="https://pin.it/1tsGtSVzW" target="_blank" rel="noopener" class="dress-card">
+          <span>Ellas</span>
+          <p>Vestidos largos, telas sofisticadas y tonos elegantes.</p>
+          <strong>Ver inspiración</strong>
+        </a>
+        <a href="https://pin.it/2PInRAJCB" target="_blank" rel="noopener" class="dress-card">
+          <span>Ellos</span>
+          <p>Traje oscuro o tuxedo en tonos clásicos.</p>
+          <strong>Ver inspiración</strong>
+        </a>
       </div>
     </section>
 
     <section class="section gallery-section reveal">
       <p class="eyebrow">Galería</p>
-      <h2>Camila</h2>
-      <div class="gallery" id="gallery"></div>
+      <h2>Instantes de Camila</h2>
+      <p class="section-intro">Toca la fotografía para descubrir la siguiente.</p>
+      <div class="gallery-stack" id="gallery"></div>
+    </section>
+
+    <section class="section recommendations reveal">
+      <p class="eyebrow">Para visitar</p>
+      <h2>Qué hacer en Santiago</h2>
+      <div class="recommendation-grid" id="recommendations"></div>
     </section>
 
     <section class="section gifts reveal">
@@ -121,7 +145,7 @@
       <h2>Mesa de regalos</h2>
       <p>En este espacio se podrán incluir una o varias mesas de regalos.</p>
       <div class="gift-actions">
-        <button class="btn secondary" data-modal="giftModal">Mesa de regalos</button>
+        <a class="btn secondary" href="https://www.amazon.com.mx/registries/gl/guest-view/34KX2H43I1U15?ref_=cm_sw_r_apann_ggr-subnav-share_N85725YDTNPRMCP5SEXR_3&language=en-US" target="_blank" rel="noopener">Amazon</a>
         <button class="btn secondary" data-modal="transferModal">Transferencia</button>
       </div>
       <p class="small-note">El día del evento encontrarás una mesa de sobres y libro de firmas en la entrada del salón.</p>
@@ -137,23 +161,10 @@
     </section>
 
     <footer class="footer">
-      <p>Un recuerdo digital creado para conservar este momento en el tiempo.</p>
-      <span>DUMOSTUDIO · Demo premium</span>
+      <p>Gracias por formar parte de este recuerdo que guardaré para siempre.</p>
+      <span>Komorebi · Demo premium</span>
     </footer>
   </main>
-
-  <div id="lightbox" class="lightbox">
-    <button id="closeLightbox" aria-label="Cerrar">×</button>
-    <img id="lightboxImg" alt="Foto de Camila" />
-  </div>
-
-  <div id="giftModal" class="modal">
-    <div class="modal-card">
-      <button class="modal-close" data-close>×</button>
-      <h2>Mesa de regalos</h2>
-      <p>Aquí se podrán colocar enlaces a Liverpool, Amazon, Palacio de Hierro u otras opciones elegidas por la familia.</p>
-    </div>
-  </div>
 
   <div id="transferModal" class="modal">
     <div class="modal-card">

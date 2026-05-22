@@ -19,8 +19,10 @@ const EVENT = {
   ],
 
   godparents: [
-    "Sra. Marcela Villarreal de Salinas",
-    "Sr. Eduardo Salinas Treviño"
+    { role: "Padrinos de velación", names: "Marcela Villarreal y Eduardo Salinas" },
+    { role: "Padrinos de brindis", names: "Laura Monreal y Ricardo Garza" },
+    { role: "Padrinos de ramo", names: "Andrea Ruiz y Héctor Cantú" },
+    { role: "Padrinos de anillo", names: "Sofía Villarreal y Fernando Lozano" }
   ],
 
   ceremony: {
@@ -39,13 +41,49 @@ const EVENT = {
     mapUrl: "https://maps.google.com/?q=Salon+Real+de+Cumbres+Monterrey"
   },
 
+  timeline: [
+    { time: "19:00", title: "Ceremonia", detail: "Parroquia San Juan Bosco" },
+    { time: "21:00", title: "Recepción", detail: "Salón Real de Cumbres" },
+    { time: "22:00", title: "Cena", detail: "Compartiremos una cena especial" },
+    { time: "23:00", title: "Vals", detail: "Un momento para recordar" },
+    { time: "23:30", title: "Brindis", detail: "Celebremos juntos esta nueva etapa" },
+    { time: "00:00", title: "Baile", detail: "La pista nos espera" }
+  ],
+
+  menu: [
+    { course: "Entrada", dish: "Crema suave de elote rostizado" },
+    { course: "Plato fuerte", dish: "Filete en salsa de vino acompañado de vegetales" },
+    { course: "Postre", dish: "Cheesecake de frutos rojos" }
+  ],
+
+  recommendations: [
+    {
+      title: "Presa La Boca",
+      text: "Ideal para pasear, tomar fotos y disfrutar una tarde tranquila.",
+      url: "https://maps.google.com/?q=Presa+La+Boca+Santiago+Nuevo+Leon"
+    },
+    {
+      title: "Cola de Caballo",
+      text: "Uno de los lugares más bonitos para visitar en Santiago.",
+      url: "https://maps.google.com/?q=Cola+de+Caballo+Santiago+Nuevo+Leon"
+    },
+    {
+      title: "Centro de Santiago",
+      text: "Perfecto para caminar, tomar café y conocer el Pueblo Mágico.",
+      url: "https://maps.google.com/?q=Centro+Santiago+Nuevo+Leon"
+    }
+  ],
+
   dressCode: {
+    womenUrl: "https://pin.it/1tsGtSVzW",
+    menUrl: "https://pin.it/2PInRAJCB",
     title: "Formal elegante",
     women: "Vestidos largos, telas sofisticadas y tonos elegantes.",
     men: "Traje oscuro o tuxedo en tonos clásicos."
   },
 
   gifts: {
+    amazonUrl: "https://www.amazon.com.mx/registries/gl/guest-view/34KX2H43I1U15?ref_=cm_sw_r_apann_ggr-subnav-share_N85725YDTNPRMCP5SEXR_3&language=en-US",
     note: "El día del evento encontrarás una mesa de sobres y libro de firmas en la entrada del salón.",
     transfer: {
       bank: "Banco demo",

@@ -1,14 +1,12 @@
+INSTRUCCIONES
 
-REEMPLAZA ESTOS ARCHIVOS EN TU PROYECTO ACTUAL:
+1. Borra los archivos actuales del repositorio, excepto la carpeta .git si está visible.
+2. Copia TODO el contenido de esta carpeta.
+3. En GitHub Desktop haz commit:
+   "Beta 2 completa"
+4. Haz Push origin.
+5. Espera 1-2 minutos y abre el sitio.
 
-1. style.css
-2. script.js
-
-CAMBIOS PRINCIPALES:
-- Paleta clara premium
-- Hero estilo Ana Sofia
-- Nombre más suave
-- Countdown discreto
-- Sakura particles
-- Galería tipo Mia
-- Copy mexicano refinado
+Prueba invitados:
+https://dumostudio.github.io/komorebi_xvdemo/?guest=familia-gonzalez
+https://dumostudio.github.io/komorebi_xvdemo/?guest=mariana
