@@ -865,3 +865,332 @@
     height:210px;
   }
 }
+
+
+/* ===== KOMOREBI V7 — POLISH MENU, PINTEREST Y REGALOS ===== */
+
+/* Menu: force same thumbnail size for all dishes */
+.menu-dish{
+  grid-template-columns:86px 1fr !important;
+}
+.menu-thumb,
+.menu-dish img.menu-thumb{
+  display:block !important;
+  width:86px !important;
+  min-width:86px !important;
+  max-width:86px !important;
+  height:72px !important;
+  min-height:72px !important;
+  max-height:72px !important;
+  object-fit:cover !important;
+  border-radius:0 !important;
+  margin:0 !important;
+  flex:0 0 86px !important;
+}
+
+/* Pinterest CTA: cleaner text button */
+.pin-fallback{
+  font-size:.72rem !important;
+  letter-spacing:.16em !important;
+}
+
+/* Gifts v7 */
+.gifts > .eyebrow:first-child{
+  display:none !important;
+}
+
+.gift-stack{
+  width:min(92vw,760px);
+  margin:2.2rem auto 0;
+  display:grid;
+  gap:1.2rem;
+  position:relative;
+  z-index:2;
+}
+
+.gift-card{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:1rem;
+  align-items:center;
+  padding:1.35rem;
+  border:1px solid rgba(185,143,155,.20);
+  border-radius:28px;
+  background:rgba(255,255,255,.62);
+  box-shadow:0 18px 55px rgba(85,60,50,.07);
+  backdrop-filter:blur(14px);
+  text-align:left;
+}
+
+.amazon-gift-card{
+  grid-template-columns:1fr 190px;
+}
+
+.gift-card-copy span{
+  display:block;
+  margin-bottom:.6rem;
+  color:var(--mauve);
+  font-size:.72rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.gift-card-copy h3{
+  margin:.1rem 0 .45rem;
+  font-family:var(--serif);
+  font-size:2rem;
+  font-weight:500;
+  color:var(--charcoal);
+}
+
+.amazon-gift-card .gift-card-copy h3{
+  display:none !important;
+}
+
+.gift-card-copy p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.7;
+  font-size:1.02rem;
+}
+
+.amazon-logo-link{
+  display:grid;
+  place-items:center;
+  min-width:170px;
+  min-height:112px;
+  padding:1rem;
+  border-radius:24px;
+  background:linear-gradient(135deg, rgba(255,255,255,.9), rgba(234,216,202,.32));
+  text-decoration:none;
+  color:var(--charcoal);
+  border:1px solid rgba(185,143,155,.16);
+}
+
+.amazon-logo-word{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:2.15rem;
+  font-weight:700;
+  letter-spacing:-.07em;
+  line-height:.9;
+  color:#232f3e;
+  text-transform:lowercase;
+}
+
+.amazon-smile{
+  position:relative;
+  display:block;
+  width:92px;
+  height:22px;
+  margin:-.15rem 0 .35rem;
+}
+
+.amazon-smile::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:78px;
+  height:20px;
+  border-bottom:7px solid #ff9900;
+  border-radius:0 0 100% 100%;
+  transform:rotate(-7deg);
+}
+
+.amazon-smile::after{
+  content:"";
+  position:absolute;
+  right:3px;
+  top:7px;
+  width:0;
+  height:0;
+  border-left:14px solid #ff9900;
+  border-top:7px solid transparent;
+  border-bottom:7px solid transparent;
+  transform:rotate(-20deg);
+}
+
+.amazon-logo-link small{
+  margin-top:.15rem;
+  color:var(--gold);
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.event-envelope-intro{
+  width:min(92vw,720px);
+  margin:4rem auto 1.8rem;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.event-envelope-intro h2{
+  margin:.4rem auto .8rem;
+  font-family:var(--serif);
+  font-size:clamp(2.6rem, 7vw, 5.4rem);
+  font-weight:500;
+  line-height:1.02;
+  color:var(--charcoal);
+}
+
+.virtual-envelope-card{
+  grid-template-columns:1fr auto;
+}
+
+.clabe-open{
+  white-space:nowrap;
+}
+
+.clabe-modal{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+  padding:1rem;
+}
+
+.clabe-modal.active{
+  display:grid;
+  place-items:center;
+}
+
+.clabe-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(44,41,40,.45);
+  backdrop-filter:blur(12px);
+}
+
+.clabe-panel{
+  position:relative;
+  width:min(92vw,500px);
+  padding:2rem;
+  border-radius:30px;
+  background:var(--ivory);
+  box-shadow:0 30px 90px rgba(44,41,40,.20);
+  z-index:2;
+  text-align:center;
+  border:1px solid rgba(185,143,155,.22);
+}
+
+.clabe-panel h3{
+  margin:0 0 1rem;
+  font-family:var(--serif);
+  font-size:2.6rem;
+  font-weight:500;
+  color:var(--charcoal);
+}
+
+.clabe-close{
+  position:absolute;
+  right:1rem;
+  top:1rem;
+  width:42px;
+  height:42px;
+  border:1px solid rgba(185,143,155,.25);
+  border-radius:50%;
+  background:rgba(255,255,255,.72);
+  color:var(--charcoal);
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+.bank-lines{
+  margin:1rem 0;
+  padding:1rem;
+  border-radius:20px;
+  background:rgba(217,184,176,.14);
+  color:var(--muted);
+  text-align:left;
+}
+
+.bank-lines p{
+  margin:.4rem 0;
+}
+
+.clabe-copy-box{
+  display:flex;
+  gap:.7rem;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding:1rem;
+  border-radius:20px;
+  background:rgba(255,255,255,.68);
+  border:1px solid rgba(185,143,155,.16);
+}
+
+.clabe-copy-box span{
+  color:var(--charcoal);
+  font-family:monospace;
+  font-size:1.05rem;
+  letter-spacing:.03em;
+}
+
+.clabe-copy-box button{
+  border:0;
+  border-radius:999px;
+  padding:.75rem 1rem;
+  background:var(--mauve);
+  color:white;
+  cursor:pointer;
+  font-size:.78rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.copy-status{
+  opacity:0;
+  margin:1rem 0 0;
+  color:var(--gold);
+  transition:opacity .25s ease;
+}
+
+.copy-status.show{
+  opacity:1;
+}
+
+@media(max-width:720px){
+  .amazon-gift-card,
+  .virtual-envelope-card,
+  .gift-card{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .amazon-logo-link{
+    width:100%;
+    min-height:112px;
+  }
+
+  .event-envelope-intro{
+    margin:3.5rem auto 1.6rem;
+  }
+}
+
+@media(max-width:520px){
+  .menu-dish{
+    grid-template-columns:74px 1fr !important;
+  }
+
+  .menu-thumb,
+  .menu-dish img.menu-thumb{
+    width:74px !important;
+    min-width:74px !important;
+    max-width:74px !important;
+    height:68px !important;
+    min-height:68px !important;
+    max-height:68px !important;
+    flex-basis:74px !important;
+  }
+
+  .amazon-logo-word{
+    font-size:2rem;
+  }
+
+  .event-envelope-intro h2{
+    font-size:clamp(2.25rem, 11vw, 3.8rem);
+  }
+}
