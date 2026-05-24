@@ -19,14 +19,12 @@
   <section id="intro" class="intro">
     <div class="intro-bg"></div><div class="intro-overlay"></div>
     <div class="intro-content">
-      <p class="eyebrow">XV años</p><h1>Camila</h1>
-      <p>Hola, me encantaría compartir este momento contigo</p>
-      <div class="intro-guest-card" id="introGuestCard" hidden>
-        <span>Invitación reservada para</span>
-        <strong id="introGuestName"></strong>
-        <small id="introGuestPasses"></small>
-      </div>
-      <button id="enterBtn" class="btn primary">Toca para abrir la invitación</button>
+      <h1>Camila</h1>
+      <p>Hola!! Me encantaría que me acompañaras a celebrar mis XV años.</p>
+      <button id="enterBtn" class="intro-open-card" type="button" aria-label="Abrir invitación">
+        <strong id="introGuestName">Invitación</strong>
+        <small><span class="tap-icon" aria-hidden="true">☝</span> Abrir invitación</small>
+      </button>
     </div>
   </section>
 
@@ -36,7 +34,6 @@
     <section class="section-hero block" id="hero">
       <div class="hero-slideshow" id="heroSlideshow"></div><div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="hero-initial">C</p><p class="eyebrow">Te invito a mis XV años</p>
         <h2>Camila</h2><p class="date">27 · 10 · 2027</p>
         <div class="countdown" id="countdown">
           <div><strong id="days">0</strong><span>Días</span></div>
@@ -44,7 +41,7 @@
           <div><strong id="minutes">0</strong><span>Minutos</span></div>
           <div><strong id="seconds">0</strong><span>Segundos</span></div>
         </div>
-        <p class="countdown-label">Faltan para el gran día</p>
+        <p class="countdown-label">Celebra conmigo esta noche tan especial</p>
       </div>
     </section>
 
@@ -53,8 +50,7 @@
     <section class="section message block reveal" id="mensaje">
       <div class="petal-cluster cluster-left" aria-hidden="true"></div>
       <div class="round-frame"><img src="assets/photos/intro.jpg" alt="Camila" /></div>
-      <p class="eyebrow">Mensaje especial</p><h2>Te invito a acompañarme</h2>
-      <p class="lead">Con gran alegría quiero invitarte a celebrar conmigo uno de los momentos más importantes de mi vida: mis XV años. Será un honor contar con tu presencia en este día tan especial.</p>
+      <p class="lead">Quiero invitarte a uno de los momentos más importantes de mi vida: mis XV años. Será un honor compartir esta noche con las personas que han acompañado mi camino y han sido parte de mi historia.</p>
       <p class="signature">Con cariño, Camila</p>
     </section>
 
@@ -64,15 +60,18 @@
 
     <section class="section family block reveal" id="familia">
       <div class="petal-cluster cluster-right" aria-hidden="true"></div>
-      <p class="eyebrow">Mi familia</p><h2>Familia Garcia Monreal</h2>
       <p class="lead">Con profundo agradecimiento a mis padres, por su amor, sus valores y por acompañarme en cada paso que me ha traído hasta aquí.</p>
-      <div class="people-grid"><article><span>Mis padres</span><p>Sra. Daniela Monreal de Garcia<br>Sr. Alejandro Garcia Ruiz</p></article></div>
+      <div class="parents-names" aria-label="Padres de Camila">
+        <div><strong>Alejandro</strong><span>García</span></div>
+        <em>y</em>
+        <div><strong>Daniela</strong><span>Monreal</span></div>
+      </div>
     </section>
 
     <section class="section gallery-section block reveal" id="galeria">
       <div class="petal-cluster cluster-left soft" aria-hidden="true"></div>
       <p class="eyebrow">Sesión de fotos</p><h2>Instantes de Camila</h2>
-      <p class="section-copy">Con alegría y emoción celebro mis XV años, marcando el inicio de una nueva etapa llena de sueños y esperanzas.</p>
+      <p class="section-copy">Con alegría y emoción quiero compartir con todos el inicio de una nueva etapa llena de sueños, esperanza y momentos que guardaré siempre en mi corazón.</p>
       <div class="photo-counter"><span id="galleryCurrent">1</span> / <span id="galleryTotal">8</span></div>
       <div class="polaroid-stack" id="galleryStack"></div>
     </section>
@@ -89,10 +88,9 @@
 
     <section class="section guest-invite block reveal" id="invitado" hidden>
       <div class="petal-cluster cluster-right soft" aria-hidden="true"></div>
-      <p class="eyebrow">Invitación personalizada</p>
-      <h2>Un lugar especial para ti</h2>
+      <h2>Tengo un lugar especial para ti</h2>
       <article class="guest-ticket-card">
-        <span>Invitación para</span>
+        <span>Bienvenidos</span>
         <strong id="guestDisplayName"></strong>
         <p id="guestPassesText"></p>
         <a class="btn primary" href="#rsvp">Confirmar asistencia</a>
@@ -100,7 +98,8 @@
     </section>
 
     <section class="section locations block reveal" id="locaciones">
-      <p class="eyebrow">Locaciones</p><h2>Ceremonia y recepción</h2>
+      <h2>Ceremonia y recepción</h2>
+      <p class="section-copy">Estaré encantada de compartir este día contigo. Aquí encontrarás los lugares donde celebraremos cada momento de esta noche tan especial.</p>
       <div class="location-grid">
         <article class="location-card"><img class="section-photo" src="assets/photos/church.jpg" alt="Parroquia de Santiago Apóstol" loading="lazy"><p class="eyebrow">Ceremonia religiosa</p><h3>Parroquia de Santiago Apóstol</h3><p>Juárez S/N, Santiago, 67310 Santiago, N.L.</p><strong>27 octubre 2027 · 6:00 p.m.</strong><a class="btn ghost" href="https://maps.google.com/?q=Parroquia+de+Santiago+Apóstol+Santiago+NL" target="_blank">Ver ubicación</a></article>
         <article class="location-card"><img class="section-photo" src="assets/photos/venue.jpg" alt="Las Nubes Eventos" loading="lazy"><p class="eyebrow">Recepción</p><h3>Las Nubes Eventos</h3><p>Carr Nacional, Los Rodríguez, 67318 Santiago, N.L.</p><strong>27 octubre 2027 · 8:00 p.m.</strong><a class="btn ghost" href="https://maps.google.com/?q=Las+Nubes+Eventos+Santiago+NL" target="_blank">Ver ubicación</a></article>
@@ -109,7 +108,7 @@
 
     <section class="section itinerary block reveal" id="itinerario">
       <div class="petal-cluster cluster-right" aria-hidden="true"></div>
-      <p class="eyebrow">Itinerario</p><h2>Programa del día</h2>
+      <h2>Programa del día</h2>
       <div class="timeline occasio-timeline">
         <article class="timeline-card"><span>06:00 p.m.</span><h3>Ceremonia religiosa</h3><p>Parroquia de Santiago Apóstol, Santiago, N.L.</p><a href="https://maps.google.com/?q=Parroquia+de+Santiago+Apóstol+Santiago+NL" target="_blank" rel="noopener">Ver ubicación</a></article>
         <article class="timeline-card"><span>08:00 p.m.</span><h3>Cóctel de bienvenida</h3><p>Las Nubes Eventos · Carr Nacional, Los Rodríguez, Santiago, N.L.</p><a href="https://maps.google.com/?q=Las+Nubes+Eventos+Santiago+NL" target="_blank" rel="noopener">Ver ubicación</a></article>
@@ -121,7 +120,7 @@
     <section class="section menu block reveal" id="menu">
       <div class="petal-cluster cluster-left" aria-hidden="true"></div>
       <p class="eyebrow">Menú de la recepción</p><h2>Una experiencia para compartir</h2>
-      <p class="section-copy">Para que vivas una experiencia completa, agradecemos nos indiques si tienes alguna alergia o requerimiento especial en tu alimentación.</p>
+      <p class="section-copy">He preparado cada detalle con muchísimo cariño para que disfrutemos juntos una velada inolvidable. Si tienes alguna alergia o requerimiento especial en tu alimentación, agradeceré nos lo hagas saber al confirmar tu asistencia.</p>
       <div class="menu-list">
         <article class="menu-item">
           <div class="menu-title-line"><span></span><strong>Entrada</strong><span></span></div>
@@ -183,8 +182,8 @@
     <section class="section gifts block reveal" id="regalos">
       <div class="petal-cluster cluster-left soft" aria-hidden="true"></div>
 
-      <h2>Tu presencia es el mejor regalo</h2>
-      <p class="section-copy">Lo más importante para mí es compartir esta noche contigo. Si deseas tener un detalle especial, aquí encontrarás algunas opciones.</p>
+      <h2>Mesa de regalos</h2>
+      <p class="section-copy">Tu presencia será siempre el regalo más importante para mí. Pero si deseas tener un detalle adicional, he preparado una selección especial pensada para esta nueva etapa de mi vida.</p>
 
       <div class="gift-stack">
         <article class="gift-card amazon-gift-card">
@@ -202,7 +201,7 @@
       <div class="event-envelope-intro">
         <p class="eyebrow">El día del evento</p>
         <h2>Sobres y libro de firmas</h2>
-        <p class="section-copy">Habrá mesa de sobres y libro de firmas en la entrada.</p>
+        <p class="section-copy">Al llegar a la recepción encontrarás una mesa especial con sobres y libro de firmas, donde podrás dejarme un mensaje, un consejo o unas palabras que guardaré como recuerdo de esta noche tan significativa.</p>
       </div>
 
       <div class="gift-stack">
@@ -210,7 +209,7 @@
           <div class="gift-card-copy">
             <span>Sobre virtual</span>
             <h3>Un detalle a distancia</h3>
-            <p>Si prefieres enviar un detalle de manera digital, puedes consultar los datos aquí.</p>
+            <p>Si prefieres acompañarme con un detalle de manera digital, aquí podrás encontrar la información necesaria.</p>
           </div>
           <button class="btn secondary clabe-open" id="openClabe" type="button">📋 CLABE</button>
         </article>
@@ -241,10 +240,15 @@
 
     <section class="section rsvp block reveal" id="rsvp">
       <p class="eyebrow">Confirmación de asistencia</p><h2>¿Podré contar contigo?</h2>
-      <p class="lead">Me hará muy feliz saber si podré contar contigo en este día tan especial.</p>
+      <p class="lead">Tu compañía hará aún más especial esta noche que recordaré siempre. Agradeceré mucho puedas confirmar tu asistencia para preparar cada detalle con cariño.</p>
       <p class="deadline">Confirma antes del 10 de octubre de 2027</p>
       <a id="mainRsvp" class="btn primary" target="_blank">Confirmo mi asistencia</a>
       <p class="demo-notice">Demo funcional enlazado temporalmente a DUMOSTUDIO para pruebas de experiencia y navegación.</p>
+    </section>
+
+    <section class="section closing block reveal" id="despedida">
+      <p class="lead">Gracias por formar parte de un día tan importante para mí y por acompañarme en el inicio de esta nueva etapa que recordaré siempre con muchísimo cariño.</p>
+      <p class="section-copy">Más abajo encontrarás más detalles del lugar donde realizaremos esta celebración y algunas opciones para que puedas disfrutar antes o después de mi evento. También podrás agregar mi fiesta a tu calendario.</p>
     </section>
 
     <section class="section weather block reveal" id="clima">
