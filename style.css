@@ -1194,3 +1194,92 @@
     font-size:clamp(2.25rem, 11vw, 3.8rem);
   }
 }
+
+/* ===== KOMOREBI V7.1: invitado personalizado + logo Amazon real ===== */
+.intro-guest-card{
+  width:min(92vw,380px);
+  margin:1.15rem auto 1.05rem;
+  padding:1rem 1.15rem;
+  border:1px solid rgba(255,255,255,.62);
+  border-radius:28px;
+  background:rgba(255,255,255,.54);
+  box-shadow:0 18px 48px rgba(80,60,50,.08);
+  backdrop-filter:blur(16px);
+}
+
+.intro-guest-card span,
+.guest-ticket-card span{
+  display:block;
+  margin-bottom:.45rem;
+  color:var(--mauve);
+  font-size:.68rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.intro-guest-card strong{
+  display:block;
+  font-family:var(--serif);
+  font-size:clamp(1.55rem,7vw,2.25rem);
+  font-weight:500;
+  line-height:1;
+  color:var(--charcoal);
+}
+
+.intro-guest-card small{
+  display:block;
+  margin-top:.45rem;
+  color:var(--gold);
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.guest-invite{
+  position:relative;
+  background:radial-gradient(circle at 50% 0%,rgba(217,184,176,.22),transparent 28rem),rgba(255,255,255,.22);
+}
+
+.guest-ticket-card{
+  width:min(92vw,620px);
+  margin:2rem auto 0;
+  padding:2rem 1.4rem;
+  border:1px solid rgba(185,143,155,.20);
+  border-radius:34px;
+  background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(234,216,202,.30));
+  box-shadow:0 24px 70px rgba(85,60,50,.09);
+  backdrop-filter:blur(16px);
+}
+
+.guest-ticket-card strong{
+  display:block;
+  font-family:var(--serif);
+  font-size:clamp(2.2rem,10vw,4.2rem);
+  font-weight:500;
+  line-height:1;
+  color:var(--charcoal);
+}
+
+.guest-ticket-card p{
+  max-width:420px;
+  margin:1rem auto 1.5rem;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.amazon-logo-img{
+  display:block;
+  width:min(190px,42vw);
+  height:auto;
+  margin:0 auto .55rem;
+}
+
+.amazon-logo-link{
+  gap:.15rem;
+}
+
+@media(max-width:520px){
+  .intro-guest-card{margin-top:.9rem;padding:.88rem 1rem;border-radius:24px}
+  .guest-ticket-card{padding:1.65rem 1rem;border-radius:30px}
+  .amazon-logo-img{width:min(155px,48vw)}
+}

@@ -21,6 +21,11 @@
     <div class="intro-content">
       <p class="eyebrow">XV años</p><h1>Camila</h1>
       <p>Hola, me encantaría compartir este momento contigo</p>
+      <div class="intro-guest-card" id="introGuestCard" hidden>
+        <span>Invitación reservada para</span>
+        <strong id="introGuestName"></strong>
+        <small id="introGuestPasses"></small>
+      </div>
       <button id="enterBtn" class="btn primary">Toca para abrir la invitación</button>
     </div>
   </section>
@@ -80,6 +85,18 @@
         <article><span>Padrinos de Biblia y Rosario</span><p>Carolina López</p></article>
         <article><span>Padrinos de pastel</span><p>José Luis Monreal García</p></article>
       </div>
+    </section>
+
+    <section class="section guest-invite block reveal" id="invitado" hidden>
+      <div class="petal-cluster cluster-right soft" aria-hidden="true"></div>
+      <p class="eyebrow">Invitación personalizada</p>
+      <h2>Un lugar especial para ti</h2>
+      <article class="guest-ticket-card">
+        <span>Invitación para</span>
+        <strong id="guestDisplayName"></strong>
+        <p id="guestPassesText"></p>
+        <a class="btn primary" href="#rsvp">Confirmar asistencia</a>
+      </article>
     </section>
 
     <section class="section locations block reveal" id="locaciones">
@@ -176,8 +193,7 @@
             <p>Preparé una selección de detalles que reflejan mis gustos y sueños para esta nueva etapa.</p>
           </div>
           <a class="amazon-logo-link" href="https://www.amazon.com.mx/registries/gl/guest-view/34KX2H43I1U15?ref_=cm_sw_r_apann_ggr-subnav-share_N85725YDTNPRMCP5SEXR_3&language=en-US" target="_blank" rel="noopener" aria-label="Ver regalos en Amazon">
-            <span class="amazon-logo-word">amazon</span>
-            <span class="amazon-smile" aria-hidden="true"></span>
+            <img class="amazon-logo-img" src="assets/logos/logo_amazon.svg" alt="Amazon" loading="lazy">
             <small>Ver regalos</small>
           </a>
         </article>
