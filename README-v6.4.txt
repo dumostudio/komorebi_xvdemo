@@ -21,7 +21,7 @@ Secciones modificadas:
 - Hospedaje: foto real.
 - Sitios que visitar: fotos reales.
 - Menú: fotos reales.
-- Mesa de regalos: estructura final con Amazon + sobres + sobre virtual + popup CLABE.
+- : estructura final con Amazon + sobres + sobre virtual + popup CLABE.
 
 Verificación:
 - gift sections encontradas antes de reemplazar: 1

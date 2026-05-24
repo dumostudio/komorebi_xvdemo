@@ -2,7 +2,7 @@ KOMOREBI V7.1
 
 Cambios realizados sobre komorebi-v7:
 
-1. Mesa de regalos Amazon
+1.  Amazon
 - Se integró el logo real proporcionado en SVG como asset:
   assets/logos/logo_amazon.svg
 - Se eliminó el logo simulado construido con texto/CSS en la tarjeta de Amazon.
