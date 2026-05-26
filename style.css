@@ -1372,3 +1372,19 @@
     height:78px!important;min-height:78px!important;max-height:78px!important;
   }
 }
+
+/* ===== KOMOREBI V7.3.3 — MENU PHOTO HEIGHT FIX ===== */
+/* Las fotos del menú deben ocupar todo el alto de su tarjeta; el platillo fuerte tiene más texto y por eso el thumbnail fijo quedaba centrado/cortado visualmente. */
+.menu-dish,
+.menu-list .menu-dish{
+  align-items:stretch!important;
+}
+.menu-thumb,
+.menu-dish img.menu-thumb,
+.menu-list .menu-thumb{
+  height:100%!important;
+  min-height:100%!important;
+  max-height:none!important;
+  align-self:stretch!important;
+  object-fit:cover!important;
+}
