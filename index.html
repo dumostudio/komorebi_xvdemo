@@ -211,28 +211,6 @@
           <button class="btn secondary clabe-open" id="openClabe" type="button">📋 CLABE</button>
         </article>
       </div>
-
-      <div class="clabe-modal" id="clabeModal" aria-hidden="true">
-        <div class="clabe-backdrop" data-clabe-close></div>
-        <div class="clabe-panel" role="dialog" aria-modal="true" aria-labelledby="clabeTitle">
-          <button class="clabe-close" type="button" data-clabe-close aria-label="Cerrar">×</button>
-          <p class="eyebrow">Sobre virtual</p>
-          <h3 id="clabeTitle">Datos bancarios</h3>
-
-          <div class="bank-lines">
-            <p><strong>Banco:</strong> BBVA</p>
-            <p><strong>Titular:</strong> Camila García Monreal</p>
-            <p><strong>Concepto sugerido:</strong> Regalo XV Camila</p>
-          </div>
-
-          <div class="clabe-copy-box">
-            <span id="clabeText">012345678901234567</span>
-            <button type="button" id="copyClabe" aria-label="Copiar CLABE">📋 Copiar</button>
-          </div>
-
-          <p class="copy-status" id="copyStatus">CLABE copiada</p>
-        </div>
-      </div>
     </section>
 
     <section class="section rsvp block reveal" id="rsvp">
@@ -283,6 +261,29 @@
       <p class="footer-note">Un recuerdo digital creado para conservar este momento en el tiempo.</p><span>Komorebi · Demo premium</span>
     </footer>
   </main>
+
+
+      <div class="clabe-modal" id="clabeModal" aria-hidden="true">
+        <div class="clabe-backdrop" data-clabe-close></div>
+        <div class="clabe-panel" role="dialog" aria-modal="true" aria-labelledby="clabeTitle">
+          <button class="clabe-close" type="button" data-clabe-close aria-label="Cerrar">×</button>
+          <p class="eyebrow">Sobre virtual</p>
+          <h3 id="clabeTitle">Datos bancarios</h3>
+
+          <div class="bank-lines">
+            <p><strong>Banco:</strong> BBVA</p>
+            <p><strong>Titular:</strong> Camila García Monreal</p>
+            <p><strong>Concepto sugerido:</strong> Regalo XV Camila</p>
+          </div>
+
+          <div class="clabe-copy-box">
+            <span id="clabeText">012345678901234567</span>
+            <button type="button" id="copyClabe" aria-label="Copiar CLABE">📋 Copiar</button>
+          </div>
+
+          <p class="copy-status" id="copyStatus">CLABE copiada</p>
+        </div>
+      </div>
 
   <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
   <script src="data/event.js"></script><script src="data/guests.js"></script><script src="script.js"></script>
