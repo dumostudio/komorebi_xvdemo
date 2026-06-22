@@ -1373,18 +1373,29 @@
   }
 }
 
-/* ===== KOMOREBI V7.3.3 — MENU PHOTO HEIGHT FIX ===== */
-/* Las fotos del menú deben ocupar todo el alto de su tarjeta; el platillo fuerte tiene más texto y por eso el thumbnail fijo quedaba centrado/cortado visualmente. */
+/* ===== KOMOREBI V7.3.4 — MENU UNIFORM HEIGHT FIX ===== */
+/* Problema anterior: height:100% estiraba la foto del plato fuerte porque esa tarjeta
+   tiene más texto y era más alta. Solución: altura fija uniforme en todas las tarjetas
+   (100px). La foto llena ese espacio con object-fit:cover sin distorsionarse.
+   También se centra el contenedor para que las tarjetas queden justificadas en desktop. */
 .menu-dish,
 .menu-list .menu-dish{
-  align-items:stretch!important;
+  min-height:100px!important;
+  align-items:center!important;
 }
 .menu-thumb,
 .menu-dish img.menu-thumb,
 .menu-list .menu-thumb{
-  height:100%!important;
-  min-height:100%!important;
-  max-height:none!important;
-  align-self:stretch!important;
-  object-fit:cover!important;
+  width:96px!important;min-width:96px!important;max-width:96px!important;
+  height:100px!important;min-height:100px!important;max-height:100px!important;
+  object-fit:cover!important;object-position:center!important;
+  display:block!important;align-self:stretch!important;
+}
+.menu-list{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+}
+.menu-item{
+  width:100%!important;
 }
