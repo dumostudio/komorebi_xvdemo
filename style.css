@@ -755,6 +755,8 @@
   z-index:9999;
   display:none;
   padding:1rem;
+  align-items:center;
+  justify-items:center;
 }
 
 .clabe-modal.active{
@@ -1028,115 +1030,6 @@
 
 .clabe-open{
   white-space:nowrap;
-}
-
-.clabe-modal{
-  position:fixed;
-  inset:0;
-  z-index:9999;
-  display:none;
-  padding:1rem;
-}
-
-.clabe-modal.active{
-  display:grid;
-  place-items:center;
-}
-
-.clabe-backdrop{
-  position:absolute;
-  inset:0;
-  background:rgba(44,41,40,.45);
-  backdrop-filter:blur(12px);
-}
-
-.clabe-panel{
-  position:relative;
-  width:min(92vw,500px);
-  padding:2rem;
-  border-radius:30px;
-  background:var(--ivory);
-  box-shadow:0 30px 90px rgba(44,41,40,.20);
-  z-index:2;
-  text-align:center;
-  border:1px solid rgba(185,143,155,.22);
-}
-
-.clabe-panel h3{
-  margin:0 0 1rem;
-  font-family:var(--serif);
-  font-size:2.6rem;
-  font-weight:500;
-  color:var(--charcoal);
-}
-
-.clabe-close{
-  position:absolute;
-  right:1rem;
-  top:1rem;
-  width:42px;
-  height:42px;
-  border:1px solid rgba(185,143,155,.25);
-  border-radius:50%;
-  background:rgba(255,255,255,.72);
-  color:var(--charcoal);
-  font-size:1.5rem;
-  cursor:pointer;
-}
-
-.bank-lines{
-  margin:1rem 0;
-  padding:1rem;
-  border-radius:20px;
-  background:rgba(217,184,176,.14);
-  color:var(--muted);
-  text-align:left;
-}
-
-.bank-lines p{
-  margin:.4rem 0;
-}
-
-.clabe-copy-box{
-  display:flex;
-  gap:.7rem;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  padding:1rem;
-  border-radius:20px;
-  background:rgba(255,255,255,.68);
-  border:1px solid rgba(185,143,155,.16);
-}
-
-.clabe-copy-box span{
-  color:var(--charcoal);
-  font-family:monospace;
-  font-size:1.05rem;
-  letter-spacing:.03em;
-}
-
-.clabe-copy-box button{
-  border:0;
-  border-radius:999px;
-  padding:.75rem 1rem;
-  background:var(--mauve);
-  color:white;
-  cursor:pointer;
-  font-size:.78rem;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
-
-.copy-status{
-  opacity:0;
-  margin:1rem 0 0;
-  color:var(--gold);
-  transition:opacity .25s ease;
-}
-
-.copy-status.show{
-  opacity:1;
 }
 
 @media(max-width:720px){

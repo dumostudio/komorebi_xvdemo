@@ -100,11 +100,13 @@ setTimeout(refreshPinterestFallbacks, 5000);
   const closeModal = () => {
     modal.classList.remove("active");
     modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
   };
 
   const openModal = () => {
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
   };
 
   openBtn.addEventListener("click", openModal);
