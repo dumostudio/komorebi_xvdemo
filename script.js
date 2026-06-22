@@ -88,7 +88,6 @@ refreshPinterestFallbacks();
 setTimeout(refreshPinterestFallbacks, 5000);
 
 
-// ===== KOMOREBI V6.4 REAL JS: CLABE POPUP =====
 (function(){
   const modal = document.getElementById("clabeModal");
   const openBtn = document.getElementById("openClabe");
