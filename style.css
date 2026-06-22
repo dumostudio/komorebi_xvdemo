@@ -347,11 +347,21 @@
 }
 
 /* Menu like Mia */
+/* ===== MENÚ — REGLA ÚNICA DEFINITIVA ===== */
+/* Todas las reglas de menú viven aquí. No repetir en ningún otro lugar del CSS.
+   Regla de maqueta: foto siempre ocupa el alto completo de la tarjeta con object-fit:cover.
+   La tarjeta tiene altura fija para que las 3 queden uniformes sin importar el texto.
+   Ancho desktop: 96px foto / móvil: 74px foto. */
+
 .menu-list{
   width:min(92vw, 780px);
   margin:3rem auto 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 .menu-item{
+  width:100%;
   margin:0 auto 2.3rem;
 }
 .menu-title-line{
@@ -374,8 +384,9 @@
 }
 .menu-dish{
   display:grid;
-  grid-template-columns:86px 1fr;
-  align-items:center;
+  grid-template-columns:96px 1fr;
+  align-items:stretch;
+  height:96px;
   width:min(100%, 430px);
   margin:0 auto;
   border:1px solid rgba(185,143,155,.22);
@@ -385,12 +396,14 @@
   box-shadow:0 12px 30px rgba(85,60,50,.05);
 }
 .menu-thumb{
-  width:86px;
-  height:72px;
-  min-height:72px;
+  display:block;
+  width:96px;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  flex-shrink:0;
   margin:0;
   border-radius:0;
-  font-size:.58rem;
 }
 .menu-dish p{
   margin:0;
@@ -399,6 +412,22 @@
   font-family:var(--serif);
   font-size:1.05rem;
   line-height:1.45;
+  display:flex;
+  align-items:center;
+}
+
+@media(max-width:520px){
+  .menu-dish{
+    grid-template-columns:74px 1fr;
+    height:80px;
+  }
+  .menu-thumb{
+    width:74px;
+  }
+  .menu-dish p{
+    font-size:1rem;
+    padding:.7rem .75rem;
+  }
 }
 
 /* Pinterest widget closer to Occasio */
@@ -447,18 +476,6 @@
 }
 
 @media(max-width:520px){
-  .menu-dish{
-    grid-template-columns:74px 1fr;
-  }
-  .menu-thumb{
-    width:74px;
-    height:68px;
-    min-height:68px;
-  }
-  .menu-dish p{
-    font-size:1rem;
-    padding:.7rem .75rem;
-  }
   .pinterest-widget-shell{
     min-height:300px;
   }
@@ -644,15 +661,6 @@
   object-fit:cover;
   border-radius:20px;
   margin:-.2rem 0 1.2rem;
-}
-
-.menu-thumb{
-  width:86px;
-  height:72px;
-  min-height:72px;
-  object-fit:cover;
-  border-radius:0;
-  margin:0;
 }
 
 .gift-stack{
@@ -866,27 +874,6 @@
   }
 }
 
-
-/* ===== KOMOREBI V7 — POLISH MENU, PINTEREST Y REGALOS ===== */
-
-/* Menu: force same thumbnail size for all dishes */
-.menu-dish{
-  grid-template-columns:86px 1fr !important;
-}
-.menu-thumb,
-.menu-dish img.menu-thumb{
-  display:block !important;
-  width:86px !important;
-  min-width:86px !important;
-  max-width:86px !important;
-  height:72px !important;
-  min-height:72px !important;
-  max-height:72px !important;
-  object-fit:cover !important;
-  border-radius:0 !important;
-  margin:0 !important;
-  flex:0 0 86px !important;
-}
 
 /* Pinterest CTA: cleaner text button */
 .pin-fallback{
@@ -1171,20 +1158,6 @@
 }
 
 @media(max-width:520px){
-  .menu-dish{
-    grid-template-columns:74px 1fr !important;
-  }
-
-  .menu-thumb,
-  .menu-dish img.menu-thumb{
-    width:74px !important;
-    min-width:74px !important;
-    max-width:74px !important;
-    height:68px !important;
-    min-height:68px !important;
-    max-height:68px !important;
-    flex-basis:74px !important;
-  }
 
   .amazon-logo-word{
     font-size:2rem;
@@ -1350,12 +1323,6 @@
 .closing{background:rgba(255,255,255,.34);}
 .closing .lead{font-family:var(--serif);font-size:clamp(1.45rem,5.4vw,2.2rem);line-height:1.35;color:var(--charcoal);}
 .event-envelope-intro{margin-top:2.8rem;}
-.menu-dish,.menu-list .menu-dish{grid-template-columns:96px 1fr!important;min-height:84px!important;}
-.menu-thumb,.menu-dish img.menu-thumb,.menu-list .menu-thumb{
-  width:96px!important;min-width:96px!important;max-width:96px!important;
-  height:84px!important;min-height:84px!important;max-height:84px!important;
-  object-fit:cover!important;display:block!important;
-}
 @media(min-width:760px){
   .section h2,.footer h2{font-size:clamp(2.65rem,6vw,4.4rem);}
   .godparents h2{font-size:clamp(2.25rem,4.6vw,3.6rem);}
@@ -1366,49 +1333,4 @@
   .quote p{max-width:10.5ch;line-height:1.12;}
   .parents-names{gap:.55rem;}
   .parents-names div{min-width:112px;}
-  .menu-dish,.menu-list .menu-dish{grid-template-columns:86px 1fr!important;min-height:78px!important;}
-  .menu-thumb,.menu-dish img.menu-thumb,.menu-list .menu-thumb{
-    width:86px!important;min-width:86px!important;max-width:86px!important;
-    height:78px!important;min-height:78px!important;max-height:78px!important;
-  }
-}
-
-/* ===== KOMOREBI V7.3.6 — MENU TARJETAS ALTURA UNIFORME ===== */
-/* Regla permanente de maqueta:
-   - La tarjeta completa (.menu-dish) tiene altura fija de 96px.
-     Eso hace que las 3 tarjetas sean iguales sin importar cuánto texto tenga cada plato.
-   - La foto ocupa exactamente el alto de la tarjeta (96px) con object-fit:cover.
-     No se estira porque object-fit:cover recorta sin distorsionar.
-   - El texto se centra verticalmente dentro de su celda.
-   - Si en un encargo futuro el texto de algún plato es muy largo, aumentar este valor
-     en ambos lugares (.menu-dish height y .menu-thumb height) al mismo tiempo. */
-.menu-dish,
-.menu-list .menu-dish{
-  height:96px!important;
-  min-height:96px!important;
-  max-height:96px!important;
-  align-items:center!important;
-  overflow:hidden!important;
-}
-.menu-thumb,
-.menu-dish img.menu-thumb,
-.menu-list .menu-thumb{
-  width:96px!important;min-width:96px!important;max-width:96px!important;
-  height:96px!important;min-height:96px!important;max-height:96px!important;
-  object-fit:cover!important;object-position:center!important;
-  display:block!important;flex-shrink:0!important;
-}
-.menu-dish p{
-  overflow:hidden!important;
-  display:-webkit-box!important;
-  -webkit-line-clamp:3!important;
-  -webkit-box-orient:vertical!important;
-}
-.menu-list{
-  display:flex!important;
-  flex-direction:column!important;
-  align-items:center!important;
-}
-.menu-item{
-  width:100%!important;
 }
